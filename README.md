@@ -15,12 +15,8 @@ Streamstone is a small library targeted at building scalable event-sourced solut
 
 ## Schema
 
-![Schema](Schema.png)
+<a href="https://raw.githubusercontent.com/yevhen-personal/test/master/Schema.png" target="_blank" title="Click to view full size"><img src="https://raw.githubusercontent.com/yevhen-personal/test/master/Schema.png" alt="Schema" tyle="max-width:100%;"/></a>
 
 ## Schema2
 
-![Schema](Schema2.png)
-
-## Schema.GIF
-
-<a href="https://raw.githubusercontent.com/yevhen-personal/test/master/Schema.gif" target="_blank" title="Click to view full size"><img src="https://raw.githubusercontent.com/yevhen-personal/test/master/Schema.gif" alt="Schema" tyle="max-width:100%;"/></a>
+<a href="https://raw.githubusercontent.com/yevhen-personal/test/master/Schema2.png" target="_blank" title="Click to view full size"><img src="https://raw.githubusercontent.com/yevhen-personal/test/master/Schema2.png" alt="Schema for virtual partitions" tyle="max-width:100%;"/></a>
