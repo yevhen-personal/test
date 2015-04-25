@@ -1,4 +1,4 @@
-![Streamstone](Just.Logo.Centered.png)
+![Streamstone](Logo.Compact.png)
 
 Streamstone is a small library targeted at building scalable event-sourced solutions on top of Windows Azure Table Storage. The API is specifically tailored for ease of consumption from within DDD/CQRS style applications.
 
@@ -10,7 +10,7 @@ Streamstone is a small library targeted at building scalable event-sourced solut
 + Custom event and stream metadata
 + Allows including additional entities within a batch 
 + Virtual partitions support
-+ 
+
 ## Schema
 
 ![Schema](Schema.png)
