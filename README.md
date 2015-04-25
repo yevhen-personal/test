@@ -4,6 +4,9 @@ Streamstone is a small library targeted at building scalable event-sourced solut
 
 ## Features
 
+<img style="display:block; margin:0 auto; max-width:100%;" src="https://github.com/yevhen-personal/test/raw/master/Logo.Compact.png" alt="Streamstone">
+
+
 + Easy-to-use, functional style API
 + Fully consistent stream operations
 + Duplicate event detection (based on unique id)
