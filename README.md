@@ -21,3 +21,7 @@ Streamstone is a small library targeted at building scalable event-sourced solut
 
 ![Schema](Schema2.png)
 
+## Schema.GIF
+
+![Schema](Schema.gif)
+
