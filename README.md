@@ -1,4 +1,4 @@
-![Streamstone](Logo.Wide.png)
+![Streamstone](Just.Logo.png)
 
 Streamstone is a small library targeted at building scalable event-sourced solutions on top of Windows Azure Table Storage. The API is specifically tailored for ease of consumption from within DDD/CQRS style applications.
 
