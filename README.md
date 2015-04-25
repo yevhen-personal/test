@@ -23,5 +23,4 @@ Streamstone is a small library targeted at building scalable event-sourced solut
 
 ## Schema.GIF
 
-![Schema](Schema.gif)
-
+<a href="https://raw.githubusercontent.com/yevhen-personal/test/master/Schema.gif" target="_blank" title="Click to view full size"><img src="https://raw.githubusercontent.com/yevhen-personal/test/master/Schema.gif" alt="Schema" tyle="max-width:100%;"/></a>
