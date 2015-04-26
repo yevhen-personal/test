@@ -1,9 +1,18 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/3rsmwblor11b6inq/branch/master?svg=true)](https://ci.appveyor.com/project/yevhen/streamstone/branch/master)
+[![NuGet](https://img.shields.io/nuget/v/Streamstone.svg?style=flat)](https://www.nuget.org/packages/Streamstone/)
+
+
 <p align="center">
   <img src="https://github.com/yevhen-personal/test/blob/master/Logo.Compact.png?raw=true" alt="Streamstone's logo"/>
 </p>
 
 Streamstone is a small library targeted at building scalable event-sourced applications on top of Azure Table Storage. It has simple, functional style API, heavily inspired by Greg Young's Event Store.
 
+### How to install
+
+To install Streamstone via NuGet, run this command in NuGet package manager console:
+
+	PM> Install-Package Streamstone
 
 ## Features
 
