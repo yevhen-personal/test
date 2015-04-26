@@ -4,19 +4,18 @@
 
 Streamstone is a small library targeted at building scalable event-sourced applications on top of Azure Table Storage. It has simple, functional style API, heavily inspired by Greg Young's Event Store.
 
+
 ## Features
 
 + ACID stream operations
-+ Optimistic concurrency & idempotence support
++ Optimistic concurrency & idempotency support
 + Custom stream and event properties
-+ Arbitrary entity includes within a batch
-+ Virtual partitions [PLANNED]
-
-## Use-Cases
-TODO
++ Arbitrary entity includes within a batch (for synchronous snapshots and projections)
++ Virtual partitions and stream directory (for multi-tenant apps and global event ordering) [PLANNED]
++ Reading events in slices with automatic continuation over WATS 1K page size limitation
 
 ## Design
-TODO
+Streamstone is just a thin layer (library, not a server) on top of Windows Azure Table Storage. It  merely implements a low-level mechanics for dealing with event streams, all heavy-weight lifting is done by underlying store. Streamstone's api is stateless and all exposed objects are immutable once constructed.
 
 ## Schema
 
