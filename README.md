@@ -4,15 +4,6 @@
 
 Streamstone is a small library targeted at building scalable event-sourced applications on top of Azure Table Storage. It has simple, functional style API, heavily inspired by Greg Young's Event Store.
 
-[![Build status](https://ci.appveyor.com/api/projects/status/3rsmwblor11b6inq/branch/master?svg=true)](https://ci.appveyor.com/project/yevhen/streamstone/branch/master)
-[![NuGet](https://img.shields.io/nuget/v/Streamstone.svg?style=flat)](https://www.nuget.org/packages/Streamstone/)
-
-### How to install
-
-To install Streamstone via NuGet, run this command in NuGet package manager console:
-
-	PM> Install-Package Streamstone
-
 ## Features
 
 + ACID stream operations
@@ -22,6 +13,7 @@ To install Streamstone via NuGet, run this command in NuGet package manager cons
 + Virtual partitions (for multi-tenant apps and global event ordering) [PLANNED]
 
 ## Design
+
 Streamstone is just a thin layer (library, not a server) on top of Windows Azure Table Storage. It implements low-level mechanics for dealing with event streams, and all heavy-weight lifting is done by underlying store. 
 
 The api is stateless and all exposed objects are immutable, once fully constructed. 
@@ -39,13 +31,30 @@ TODO
 
 ## Limitations
 
-Same as for underlying Windows Azure Table Storage:
-+ Maximum size of batch is 4MB
-+ Maximum size of event is 1 MB
-+ Maximum size of payload and metadata properties is 64Kb 
-+ Maximum length of property name is 255 chars
-+ An event can have up to 255 custom properties
++ The maximum batch size is 99 entities (100 entities WATS batch size limit - 1 stream header entity) 
++ With idempotency enabled, the maximum batch size is 49 events (100/2 - 1 stream header entity) 
++ The maximum slice size when reading events is 1000 (WATS limitation)
 
-> 
-+ [WATS limitations on MSDN](http://msdn.microsoft.com/en-us/library/azure/dd179338.aspx)
-+ [Entity size calculation](http://blogs.msdn.com/b/avkashchauhan/archive/2011/11/30/how-the-size-of-an-entity-is-caclulated-in-windows-azure-table-storage.aspx)
+Plus, all of the limitations of the underlying Azure Table Storage API:
+
++ Maximum size of batch is 4MB
++ Maximum size of entity is 1 MB
++ Maximum size of property is 64Kb 
++ Maximum length of property name is 255 chars
++ An entity can have up to 255 custom properties
+
+>  [WATS limitations on MSDN](http://msdn.microsoft.com/en-us/library/azure/dd179338.aspx) 
+
+## Status
+
+Build -> [![Build status](https://ci.appveyor.com/api/projects/status/3rsmwblor11b6inq/branch/master?svg=true)](https://ci.appveyor.com/project/yevhen/streamstone/branch/master)
+
+NuGet -> [![NuGet](https://img.shields.io/nuget/v/Streamstone.svg?style=flat)](https://www.nuget.org/packages/Streamstone/)
+
+## Community
+
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/yevhen/Streamstone?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+## License
+
+Apache 2 License
