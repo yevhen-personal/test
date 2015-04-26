@@ -6,9 +6,11 @@ Streamstone is a small library targeted at building highly scalable event-source
 
 ## Features
 
++ Fully consistent stream operations
 + Optimistic concurrency & idempotence support
 + Custom stream and event properties
-+ Arbitrary entity includes within a batch 
++ Arbitrary entity includes within a batch
++ Virtual partitions support [PLANNED]
 
 ## Schema
 
