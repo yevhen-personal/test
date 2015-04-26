@@ -12,13 +12,13 @@ Streamstone is a small library targeted at building scalable event-sourced appli
 + Arbitrary entity includes within a batch (for synchronous snapshots and projections)
 + Virtual partitions (for multi-tenant apps and global event ordering) [PLANNED]
 
-## Installing from NuGet [[![NuGet](https://img.shields.io/nuget/v/Streamstone.svg?style=flat)](https://www.nuget.org/packages/Streamstone/)]
+## Installing from NuGet [![NuGet](https://img.shields.io/nuget/v/Streamstone.svg?style=flat)](https://www.nuget.org/packages/Streamstone/)
 
 To install Streamstone via NuGet, run this command in NuGet package manager console:
 
     PM> Install-Package Streamstone
 
-## Building from source [[![Build status](https://ci.appveyor.com/api/projects/status/3rsmwblor11b6inq/branch/master?svg=true)](https://ci.appveyor.com/project/yevhen/streamstone/branch/master)]
+## Building from source [![Build status](https://ci.appveyor.com/api/projects/status/3rsmwblor11b6inq/branch/master?svg=true)](https://ci.appveyor.com/project/yevhen/streamstone/branch/master)
 
 ## Design
 
